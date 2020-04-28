@@ -1,0 +1,147 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.digimarc.dmsar"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:7:5-65
+11-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:7:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:8:5-67
+12-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:8:22-64
+13
+14    <!--
+15         This tag indicates that this application requires ARCore. This results in the application
+16        only being visible in the Google Play Store on devices that support ARCore.
+17    -->
+18    <uses-feature
+18-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:12:5-14:35
+19        android:name="android.hardware.camera.ar"
+19-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:13:9-50
+20        android:required="true" />
+20-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:14:9-32
+21
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:10:5-79
+22-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:10:22-76
+23    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+23-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:12:5-71
+23-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:12:22-68
+24
+25    <uses-feature
+25-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:14:5-16:35
+26        android:name="android.hardware.camera"
+26-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:15:9-47
+27        android:required="true" />
+27-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:16:9-32
+28    <uses-feature
+28-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:17:5-19:36
+29        android:name="android.hardware.camera.autofocus"
+29-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:18:9-57
+30        android:required="false" />
+30-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:19:9-33
+31
+32    <application
+32-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:16:5-44:19
+33        android:allowBackup="true"
+33-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:17:9-35
+34        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+34-->[com.android.support:support-compat:28.0.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\f1491a81a65d4033a56d6549564e765e\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:icon="@mipmap/ic_launcher"
+37-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:18:9-43
+38        android:label="@string/app_name"
+38-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:19:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:20:9-54
+40        android:supportsRtl="true"
+40-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:21:9-35
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme" >
+42-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:22:9-40
+43
+44        <!--
+45        This tag indicates that this application requires ARCore. This results in the
+46        application only being visible in the Google Play Store on devices that support
+47        ARCore.
+48        -->
+49        <meta-data
+49-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:27:9-29:40
+50            android:name="com.google.ar.core"
+50-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:28:13-46
+51            android:value="required" />
+51-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:29:13-37
+52
+53        <activity
+53-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:31:9-39:20
+54            android:name="com.digimarc.dmsar.MainActivity"
+54-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:32:13-59
+55            android:screenOrientation="portrait" >
+55-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:33:13-49
+56            <intent-filter>
+56-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:34:13-38:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:35:17-69
+57-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:35:25-66
+58                <action android:name="android.intent.action.VIEW" />
+58-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:36:17-69
+58-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:36:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:37:17-77
+60-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:37:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <meta-data
+64-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:41:9-43:50
+65            android:name="com.digimarc.LicenseKey"
+65-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:42:13-51
+66            android:value="@string/license_key" />
+66-->C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\app\src\main\AndroidManifest.xml:43:13-48
+67
+68        <service android:name="com.digimarc.capture.audio.AudioService" />
+68-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:22:9-75
+68-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:22:18-72
+69
+70        <provider
+70-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:24:9-28:40
+71            android:name="com.digimarc.dms.internal.SdkInitProvider"
+71-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:25:13-69
+72            android:authorities="com.digimarc.dmsar.sdkinitprovider"
+72-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:26:13-67
+73            android:enabled="true"
+73-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:27:13-35
+74            android:exported="false" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+74-->[:dms] C:\Users\Reshmi\AndroidStudioProjects\DMSArDemo\dms\build\.transforms\b0f10e41f03ef5cd2184cbd5a3367ac2\dms\AndroidManifest.xml:28:13-37
+75        <meta-data
+75-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:33:9-35:41
+76            android:name="com.google.ar.core.min_apk_version"
+76-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:34:13-62
+77            android:value="190519000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+77-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:35:13-38
+78        <activity
+78-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:37:9-43:80
+79            android:name="com.google.ar.core.InstallActivity"
+79-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:38:13-62
+80            android:configChanges="keyboardHidden|orientation|screenSize"
+80-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:39:13-74
+81            android:excludeFromRecents="true"
+81-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:40:13-46
+82            android:exported="false"
+82-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:41:13-37
+83            android:launchMode="singleTop"
+83-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:42:13-43
+84            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+84-->[com.google.ar:core:1.10.0] C:\Users\Reshmi\.gradle\caches\transforms-2\files-2.1\3d46d45ad27a18af8772f358e1b26ac4\core-1.10.0\AndroidManifest.xml:43:13-77
+85    </application>
+86
+87</manifest>

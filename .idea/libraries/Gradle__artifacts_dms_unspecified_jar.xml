@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:dms:unspecified@jar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/dms/build/.transforms/b0f10e41f03ef5cd2184cbd5a3367ac2/dms/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dms/build/.transforms/b0f10e41f03ef5cd2184cbd5a3367ac2/dms/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/dms/build/.transforms/b0f10e41f03ef5cd2184cbd5a3367ac2/dms/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">DMS AR Demo</string>
+  <string name="plane_finding">Searching for surfaces…</string>
+  <string name="empty_message">Clear results</string>
+  <string name="reset">Reset</string>
+  <string name="license_key">LICENSE_KEY_GOES_HERE</string>
+</resources>

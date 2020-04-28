@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dis_spinner">#ffcccccc</color>
+    <string name="camera_kb_error">No Kb Present</string>
+    <string name="error_camera_text_already_open">Camera is already opened</string>
+    <string name="error_camera_text_configuration_failed">Camera configuration attempt failed</string>
+    <string name="error_camera_text_disconnected">Camera unexpectedly disconnected</string>
+    <string name="error_camera_text_io_error">Unexpected camera exception</string>
+    <string name="error_camera_text_no_camera">No camera available</string>
+    <string name="error_camera_text_permission_error">No permission rights to access camera</string>
+    <string name="error_camera_text_unknown">Unknown camera error</string>
+    <string name="error_camera_title_already_open">Camera Detection</string>
+    <string name="error_camera_title_configuration_failed">Camera Configuration</string>
+    <string name="error_camera_title_disconnected">Camera Detection</string>
+    <string name="error_camera_title_general_error">Camera Error</string>
+    <string name="error_camera_title_io_error">Camera Exception</string>
+    <string name="error_camera_title_no_camera">Camera Detection</string>
+    <string name="error_camera_title_permission_error">Camera Permission</string>
+    <string name="error_camera_title_unknown">Unknown Error</string>
+    <string name="error_dis_text_already_initialized">The SDK has already been initialized.</string>
+    <string name="error_dis_text_camera_configuration_exception">Camera configuration error</string>
+    <string name="error_dis_text_invalid_license">The SDK cannot be used without a valid license key</string>
+    <string name="error_dis_text_no_camera">No rear-facing camera detected.</string>
+    <string name="error_dis_text_resolve">Unable to resolve.</string>
+    <string name="error_dis_title_already_initialized">Initialization Error</string>
+    <string name="error_dis_title_audio">Audio Error</string>
+    <string name="error_dis_title_camera_exception_configuration">Camera Configuration</string>
+    <string name="error_dis_title_capture">Capture Error</string>
+    <string name="error_dis_title_invalid_license">Invalid License</string>
+    <string name="error_dis_title_no_camera">Camera Detection</string>
+    <string name="error_dis_title_reader">Reader Error</string>
+    <string name="error_dis_title_resolve">Network Error</string>
+    <string name="error_dms_invalid_key">The supplied license key is invalid or your free trial has expired. To obtain a commercial license key, please contact us at sales@digimarc.com.</string>
+    <string name="error_dms_reader_audio_unsupported_audio_config">Audio readers currently support only 16 Khz sample rate and 1 audio channel.</string>
+    <string name="error_dms_reader_image_alloc_failed">Buffer allocation failed.</string>
+    <string name="error_dms_reader_image_digimarc_required">Image_Digimarc reader must be present in readerMask.</string>
+    <string name="error_dms_reader_image_unsupported_bitmap_format">Unsupported bitmap format - please use ARGB_8888.</string>
+    <string name="error_dms_reader_image_unsupported_read_type">Barcode bitmap reading not supported.</string>
+    <string name="error_dms_reader_image_wrong_bitmap_format">CaptureFormat must be set to ARGB_8888 in order to read bitmaps.</string>
+    <string name="error_dms_reader_internal">An error occurred in the reader.</string>
+    <string name="error_dms_reader_invalid_image_region">Invalid image region specified.</string>
+    <string name="error_dms_reader_invalid_parameter">Invalid reader parameter.</string>
+    <string name="error_dms_reader_invalid_symbology">The symbology bitmask contains symbologies that are not valid for this reader type.</string>
+    <string name="error_dms_reader_missing_detection_type">An ImageDetectionType must be set for ImageReader objects.</string>
+    <string name="error_dms_reader_missing_listener">A ResultListenerInterface object must be supplied for capture readers.</string>
+    <string name="error_dms_reader_missing_module">The SDK was unable to load the native module required by this reader.</string>
+    <string name="error_dms_reader_missing_module_audio">The SDK was unable to load the audio native module.</string>
+    <string name="error_dms_reader_missing_module_barcode">The SDK was unable to load the barcode native module.</string>
+    <string name="error_dms_reader_missing_module_watermark">The SDK was unable to load the watermark native module.</string>
+    <string name="error_dms_reader_no_valid_symbology">The symbology bitmask must contain at least one valid symbology for this reader type.</string>
+    <string name="error_dms_reader_not_initialized">DMSDetectorView must be initialized before calling this method.</string>
+    <string name="error_dms_resolver_bad_credentials">Invalid resolver credentials. Please check the username and password and try again.</string>
+    <string name="error_dms_resolver_invalid_response">Resolver error.</string>
+    <string name="error_dms_resolver_network">The server could not be contacted. Please check your network settings and try again.</string>
+    <string name="error_dms_resolver_no_listener">A ResolveListener is required to create a Resolver.</string>
+    <string name="error_dms_resolver_not_started">The resolver has not been started.</string>
+    <string name="error_dms_resolver_unsupported_resolver">Non-secure resolver connections are not supported.</string>
+    <string name="error_success">Success</string>
+    <string name="exception_no_digimarc_reader">Image_Digimarc reader must be present in readerMask.</string>
+    <string name="image_view">imageview</string>
+    <string name="prompt_distance">Hold device 4–7\" from the interactive image</string>
+    <string name="prompt_focus">Tap the screen for quick camera focus on the interactive image</string>
+    <string name="prompt_light">Scanning in dim light? Try the flash button</string>
+    <string name="title_expanded_fresh">Digimarc Barcode - Label</string>
+    <string name="title_giai">Digimarc Barcode - GIAI</string>
+    <string name="title_smart_label">SmartLabel®</string>
+    <declare-styleable name="DMSDetectorView">
+        <attr format="reference" name="aimingView"/>
+        <attr format="integer" name="centerOffsetVertical"/>
+        <attr format="boolean" name="enableTapToFocus"/>
+        <attr format="boolean" name="imageOnly"/>
+        <attr format="boolean" name="showHelpPrompts"/>
+        <attr format="boolean" name="showDetectRegion"/>
+        <attr format="boolean" name="showSpinner"/>
+        <attr format="enum" name="visualizerType">
+            <enum name="none" value="0"/>
+            <enum name="microphone" value="1"/>
+        </attr>
+        <attr format="enum" name="visualizerLocation">
+            <enum name="topLeft" value="0"/>
+            <enum name="topRight" value="1"/>
+            <enum name="bottomLeft" value="2"/>
+            <enum name="bottomRight" value="3"/>
+        </attr>
+        <attr format="boolean" name="visualizerBelowHelp"/>
+    </declare-styleable>
+</resources>

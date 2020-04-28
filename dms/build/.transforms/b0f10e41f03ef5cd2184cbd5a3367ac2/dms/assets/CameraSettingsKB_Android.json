@@ -1,0 +1,224 @@
+{
+	"comment":"When adding modelNames to this file, make sure that every modelName or comma-separated list of modelNames is followed by a note (identified by the initial //). The Javascript that parses this file to generate HTML depends on the note being present.",
+	"docType":"RecommendedCameraSettingsKB",
+	"kbVersion":"2.9.20180618",
+	"platform":"Android",
+	"rules":[
+		{	"ruleName":"Samsung Galaxy S8",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1080"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}},
+				{"action":"camera2Parameters", "parameters":{"settings":"sensitivityThreshold=50"}}
+			],
+			"modelName":{"contains":[
+                "G950F",            "// Europe, Global single-SIM",
+                "G950D",            "// Global dual-SIM",
+                "G950U",            "// Unlocked US",
+                "G950A",            "// AT&T",
+                "G950P",            "// Sprint",
+                "G950T",            "// T-Mobile",
+                "G950V",            "// Verizon",
+                "G950R4",           "// US Cellular",
+                "G950W",           	"// Canada",
+                "G950S",           	"// South Korea",
+                "G950K",           	"// South Korea",
+                "G950L",           	"// South Korea",
+                "G9500",           	"// China"
+			]}
+		},
+        {	"ruleName":"Samsung Galaxy S8+",
+            "actions":[
+              {"action":"deviceResolution", "parameters":{"width":"1920", "height":"1080"}},
+              {"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}},
+              {"action":"camera2Parameters", "parameters":{"settings":"sensitivityThreshold=50"}}
+            ],
+            "modelName":{"contains":[
+                "G955U",            "// Unlocked US",
+                "G955A",            "// AT&T",
+                "G955P",            "// Sprint",
+                "G955T",            "// T-Mobile",
+                "G955V",            "// Verizon",
+                "G955R4",           "// US Cellular",
+                "G9550",            "// China"
+            ]}
+        },
+		{	"ruleName":"Samsung Galaxy S7 < 7.0",
+			"maxOSVersion": "23",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1440", "height":"1440"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}},
+				{"action":"camera2Parameters", "parameters":{"settings":"sensitivityThreshold=70 imageFormat=raw"}}
+			],
+			"modelName":{"contains":[
+				"G930",             "// USA, Global, & Southeast Asia"
+			]}
+		},
+		{	"ruleName":"Samsung Galaxy S7 >= 7.0",
+			"minOSVersion": "24",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1440", "height":"1080"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}},
+				{"action":"camera2Parameters", "parameters":{"settings":"sensitivityThreshold=70 imageFormat=raw"}}
+			],
+			"modelName":{"contains":[
+				"G930",             "// USA, Global, & Southeast Asia"
+			]}
+		},
+        {	"ruleName":"Samsung Galaxy S7 Edge < 7.0",
+			"maxOSVersion": "23",
+			"actions":[
+                {"action":"deviceResolution", "parameters":{"width":"1440", "height":"1440"}},
+                {"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}},
+                {"action":"camera2Parameters", "parameters":{"settings":"sensitivityThreshold=70"}}
+            ],
+            "modelName":{"contains":[
+                "G935",             "// USA, Global, & Southeast Asia"
+            ]}
+        },
+		{	"ruleName":"Samsung Galaxy S7 Edge >= 7.0",
+			"minOSVersion": "24",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1440", "height":"1080"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}},
+				{"action":"camera2Parameters", "parameters":{"settings":"sensitivityThreshold=70"}}
+			],
+			"modelName":{"contains":[
+				"G935",             "// USA, Global, & Southeast Asia"
+			]}
+		},
+		{	"ruleName":"Samsung Galaxy S2",
+			"comment":"Special case limiting auto focus for Galaxy S2 Models",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1080"}},
+				{"action":"focus", "parameters":{"limited":"yes"}}
+			],
+			"modelName":{"contains":[
+				"SPH-D710",					"// Sprint",
+				"SGH-I777",					"// ATT",
+				"SGH-I727", 				"//    ",
+				"SGH-I927",					"//    ",
+				"SGH-T989",					"// T-Mobile"
+			]}
+		},
+		{	"ruleName":"Samsung Galaxy Nexus",
+			"comment":"Special case Samsung Galaxy Nexus with camera corrections",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1280", "height":"720"}},
+				{"action":"cameraCorrections", "parameters":{"postProcessing":"yes"}}
+			],
+			"modelName":{"contains":[
+				"Google Galaxy Nexus I9250","// Samsung Galaxy Nexus I9250",
+				"Google Nexus 3",			"// Samsung Galaxy Nexus I9250",
+				"Galaxy X",					"// Samsung Galaxy Nexus I9250",
+				"GALAXY Nexus CDMA",		"// Samsung Galaxy Nexus, Verizon",
+				"SCH-i515",					"// Samsung Galaxy Nexus, Verizon",
+				"Google Nexus Prime",		"// Samsung Galaxy Nexus, Verizon",
+				"DROID Prime",				"// Samsung Galaxy Nexus, Verizon",
+				"Galaxy Nexus",				"// Samsung Galaxy Nexus, Verizon",
+				"GT-I9250M",				"// Samsung Galaxy Nexus I9250M"
+			]}
+		},
+		{	"ruleName":"Nexus 7",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1024", "height":"768"}}
+			],
+			"modelName": {"contains":[
+				"Nexus 7",					"// Nexus 7 2013"
+			]}
+		},
+		{	"ruleName" : "Motorola Droid Razr HD",
+			"minOSVersion": "19",
+			"actions" : [
+				{"action":"deviceResolution", "parameters":{"width":"640", "height":"480"}}
+			],
+			"modelName" : { "contains" :[
+				"XT907",					"// Verizon",
+				"XT925",	"// ",
+				"XT926",					"// Developer version",
+				"RAZR HD",	"// "
+			]}
+		},
+		{	"ruleName" : "Motorola Moto X Style",
+			"minOSVersion": "22",
+			"actions" : [
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1280"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}}
+			],
+			"modelName" : { "contains" :[
+				"XT1575",					"//"
+			]}
+		},
+		{	"ruleName" : "Motorola Droid Turbo XT1254",
+			"minOSVersion": "22",
+			"actions" : [
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1280"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}}
+			],
+			"modelName" : { "contains" :[
+				"XT1254",					"// Verizon"
+			]}
+		},
+		{	"ruleName" : "Motorola Droid Turbo/Maxx",
+			"minOSVersion": "19",
+			"actions" : [
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1280"}}
+			],
+			"modelName" : { "contains" :[
+				"XT1225",	"// ",
+				"XT1250",	"// ",
+				"XT1254",					"// Verizon"
+			]}
+		},
+		{	"ruleName":"HTC One M8",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1088"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}}
+			],
+			"modelName":{"contains":[
+				"831C",						"// Sprint",
+				"HTC 0P6B",	"// ",
+				"HTC_0P6B",	"// ",
+				"HTC6525LVW",	"// ",
+				"HTC One_M8",				"// US",
+				"HTC M8d",	"// ",
+				"HTC M8e",	"// ",
+				"HTC M8w",	"// ",
+				"HTC_M8x",	"// "
+			]}
+		},
+		{	"ruleName":"HTC One M7",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1088"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}}
+			],
+			"modelName":{"contains":[
+				"HTC One",				"//"
+			]}
+		},
+		{	"ruleName":"Huawei P8lite",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1088"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}}
+			],
+			"modelName":{"contains":[
+				"ALE-L21",						"//"
+			]}
+		},
+		{	"ruleName":"Alcatel One Touch",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1088"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}}
+			],
+			"modelName":{"contains":[
+				"ALCATEL ONE TOUCH 5020T",						"//"
+			]}
+		},
+		{	"ruleName":"Default",
+			"actions":[
+				{"action":"deviceResolution", "parameters":{"width":"1920", "height":"1080"}},
+				{"action":"cameraParameters", "parameters":{"settings":"denoise=denoise-off"}},
+				{"action":"camera2Parameters", "parameters":{"settings":"sensitivityThreshold=70"}}
+			]
+		}
+	]
+}
